@@ -1,0 +1,250 @@
+<div class="formgroup">
+  
+    <h2>Contact Bravo Law Offices</h2>
+     <!-- <img src="./images/formImg.jpg" alt="" class="imgform"> -->
+ <p> While this website provides general information,
+  it does not constitute legal advice. The best way to get guidance
+   on your specific legal issue is to contact a lawyer.
+   
+   To schedule 
+   a meeting with an attorney, please call or complete the intake form
+    below</p>
+
+    <span style="color: red;" > All form field must be entered correctly. </span>
+ 
+ 
+  <!-- onsubmit="return validateForm(this)" -->
+
+  <% if(typeof alert != 'undefined') { %>
+    <% alert.forEach(function(error) { %>
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      form not Submitted: <%= error.msg %>
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <% }) %>
+ <% } %>
+ 
+     <form  action="/contact-us"  method="post" onsubmit="return validateForm(this);return false"  id='submit-form'>
+        
+       <h1> Personal Information 
+       <hr></h1>
+ 
+<!-- <input type="text" name="errorFeedback"> -->
+
+         <label for="username">Username</label>
+         <input type="text" id="username" name="username" class="input" required>
+         <label for="password">Email Address </label>
+         <input type="email" id="email" name="email" class="input" required>
+ 
+         <label for="state">State </label>
+         <select id="intakeFormIState" name="state">
+             <option value="DID NOT RESPOND" selected="selected">Select State</option>
+             <option value="Alabama">Alabama</option>
+             <option value="Alaska">Alaska</option>
+             <option value="Arizona">Arizona</option>
+             <option value="Arkansas">Arkansas</option>
+             <option value="California">California</option>
+             <option value="Colorado">Colorado</option>
+             <option value="Connecticut">Connecticut</option>
+             <option value="Delaware">Delaware</option>
+             <option value="Florida">Florida</option>
+             <option value="Georgia">Georgia</option>
+             <option value="Hawaii">Hawaii</option>
+             <option value="Idaho">Idaho</option>
+             <option value="Illinois">Illinois</option>
+             <option value="Indiana">Indiana</option>
+             <option value="Iowa">Iowa</option>
+             <option value="Kansas">Kansas</option>
+             <option value="Kentucky">Kentucky</option>
+             <option value="Louisiana">Louisiana</option>
+             <option value="Maine">Maine</option>
+             <option value="Maryland">Maryland</option>
+             <option value="Massachusetts">Massachusetts</option>
+             <option value="Michigan">Michigan</option>
+             <option value="Minnesota">Minnesota</option>
+             <option value="Mississippi">Mississippi</option>
+             <option value="Missouri">Missouri</option>
+             <option value="Montana">Montana</option>
+             <option value="Nebraska">Nebraska</option>
+             <option value="Nevada">Nevada</option>
+             <option value="New Hampshire">New Hampshire</option>
+             <option value="New Jersey">New Jersey</option>
+             <option value="New Mexico">New Mexico</option>
+             <option value="New York">New York</option>
+             <option value="North Carolina">North Carolina</option>
+             <option value="North Dakota">North Dakota</option>
+             <option value="Ohio">Ohio</option>
+             <option value="Oklahoma">Oklahoma</option>
+             <option value="Oregon">Oregon</option>
+             <option value="Pennsylvania">Pennsylvania</option>
+             <option value="Puerto Rico">Puerto Rico</option>
+             <option value="Rhode Island">Rhode Island</option>
+             <option value="South Carolina">South Carolina</option>
+             <option value="South Dakota">South Dakota</option>
+             <option value="Tennessee">Tennessee</option>
+             <option value="Texas">Texas</option>
+             <option value="Utah">Utah</option>
+             <option value="Vermont">Vermont</option>
+             <option value="Virginia">Virginia</option>
+             <option value="Washington">Washington</option>
+             <option value="Washington DC">Washington DC</option>
+             <option value="West Virginia">West Virginia</option>
+             <option value="Wisconsin">Wisconsin</option>
+             <option value="Wyoming">Wyoming</option>
+         </select>
+ 
+         <label for="username">ZIP</label>
+         <input type="text" id="zip" name="zip" class="input" required>
+         <label for="phone">Phone </label>
+         <!-- placeholder="(xxx) xxx-xxxx" -->
+         <input  type="text" pattern="(?:\(\d{3}\)|\d{3})[- ]?\d{3}[- ]?\d{4}" maxlength="14" class="input" id="name" name="cellnumber"  tabindex="2" placeholder="xxx-xxx-xxxx" required>
+ 
+         <h1> Contact Preferences 
+             <hr>
+         </h1>
+         <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_display_checkbox_text -->
+         <label for="username">How would you like to be contacted?</label>
+         <label for="username">Check all that apply.</label>
+ 
+         <div class="checkform">
+ 
+             <label  class="labelAgree"> </label>
+             <input type="checkbox" name="emailAgree" class="ckc" id="messageEmail" onclick="textMessage()">Email
+             
+ 
+ 
+             <label  class="labelAgree">  </label>
+                 <input type="checkbox" name="phoneAgree" class="ckc" id="messagePhone"  onclick="textPhone()">Phone
+                
+                
+       </div>
+ 
+       <h1> How Can We Help You?
+         <hr>
+     </h1>
+ 
+       <label for="username">Brief description of your legal issue </label>
+ 
+       <textarea  class="textAreaInput"  name="message" id="textArea" style="margin-top: 10px;" rows="4" cols="25"  placeholder="Brief description your legal issue" required="required"></textarea>
+       <br>
+       
+       <img src="../img/images/formDisclaimer.gif" alt="" class="labelClass"><label for="">The use of the Internet or this form for communication with the firm or any individual member of the firm does not establish an attorney-client relationship. Confidential or time-sensitive
+        information should not be sent through this form.</label> <br>
+
+        <input type="checkbox" class="labelClass"  name="agreeDisclaimer" id="agree" ><label class="redDisclaimer">  <a href="/disclaimer">I have read the 
+          disclaimer. </a>  <a href="/privacy&cookies"><label for="agree"> Private Policy </label></a>  </label> <br>
+
+      
+          <div style="visibility:hidden; color:red" id="agree_chk_error">
+            Can't proceed as you didn't read disclaimer and Policy
+            </div>
+            <br>
+         
+
+         <button type="submit" name="submit" value="Submit" class="submitInput"> Submit </button>
+         <br>
+   <div class="hideAllCommentinput" style="display: flex;">
+         <input type="text" name="inputMessage" id="inputMessage" style="visibility:hidden;">
+         <input type="text" name="inputPhone" id="inputPhone" style="visibility:hidden;">
+         <input type="text" name="PDsigned" id="PDsigned" style="visibility:hidden;">
+       
+ </div>
+
+
+     
+       </form>
+
+
+       <script>
+          
+        var xphone;
+        var xmessage;
+
+
+            function validateForm(form)
+            {
+            console.log("checkbox checked is ", form.agree.checked);
+            if(!form.agree.checked)
+            {
+                document.getElementById('agree_chk_error').style.visibility='visible';
+                return false;
+            }
+            else
+            {
+                document.getElementById('agree_chk_error').style.visibility='hidden';
+                PDsigned.value = "I agreed to the Policy & Disclaimer";
+                // /event.preventDefault();
+            
+                return true;
+            }
+        }
+
+        function textMessage() {
+          var checkbox = document.getElementById('messageEmail').checked;
+          var  inputMessage= document.getElementById('inputMessage')
+          if(checkbox == true){
+            xmessage = checkbox.value = 'Agree to receive email'
+            inputMessage.value =   xmessage
+              // console.log(xmessage);
+             
+           } else {
+           xmessage = checkbox.value = 'I do not agree to receive email'
+           inputMessage.value =   xmessage
+            // console.log(xmessage) ;
+           }
+            
+        }
+
+
+        function textPhone() {
+        
+          var checkboxPhone = document.getElementById('messagePhone').checked;
+          var  inputPhone= document.getElementById('inputPhone')
+          if(checkboxPhone == true){
+            inputPhone.value = checkboxPhone.value = 'Agree to receive Phone calls'
+              // console.log(checkboxPhone.value = 'Agree to receive Phone calls');
+             
+           } else {
+            inputPhone.value = checkboxPhone.value = 'I do not accept phone calls'
+            // console.log(checkboxPhone.value = 'I do not accept phone calls');
+           }
+            
+        }
+
+
+      // function ValidateEmail(event) {
+      //   event.preventDefault();
+        
+      // }
+
+
+      // let submitInput = document.querySelector("submitInput");
+      // submitInput.addEventListener("submit", (event) => {
+      //   event.preventDefault();
+      // })
+
+    //   $(document).ready(function($) {
+    //   $(document).on('submit', '#submit-form', function(event) {
+    //     event.preventDefault();
+      
+    //     alert('page did not reload');
+    //   });
+    // });
+            
+    
+  //   $('#submit-form').submit(function (e) {
+  //     e.preventDefault();
+  // });
+
+
+          
+
+
+
+
+       </script>
+     
+     </div>

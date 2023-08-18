@@ -1,0 +1,230 @@
+
+
+
+
+<div class="Dashboard">
+
+
+          <div class="sideBar">
+
+            <div class="information">
+              <i class="logo fas fa-info"></i>
+              INFOR.
+              <hr>
+            </div>
+          
+
+            <div class="sidebar-top" >
+              <i class="main-icon fas fa-user-injured active" title="PERSONAL INJURY">
+              <span class="serviceName"> PERSONAL INJURY </span>
+              <hr>
+              </i> 
+             
+              <ul class="list">
+                <li class="list-item"  title="Premises Liability">
+                  <i class="list-item-icon fas fa-blind" title="Premises Liability"></i>
+                  <span class="list-item-text">Premises Liability</span>
+                </li>
+
+                <li class="list-item">
+                  <i class="list-item-icon fas fa-clinic-medical"></i>
+                  <span class="list-item-text">Medical Malpractice</span>
+                </li>
+
+                <li class="list-item">
+                  <i class="list-item-icon fas fa-laptop-house"></i>
+                  <span class="list-item-text">Work-Related Injury</span>
+                </li>
+
+                <li class="list-item">
+                  <i class="list-item-icon fas fa-car-crash"></i>
+                  <span class="list-item-text"> Serious Accidents</span>
+                </li>
+              </ul>
+            </div>
+
+              <div class="sidebar-center">
+                <i class="main-icon fas fa-building">
+                <span class="serviceName">REAL ESTATE</span> 
+                </i>
+
+                <ul class="list">
+                  <li class="list-item"  title="Premises Liability">
+                    <i class="list-item-icon fas fa-file-contract"></i>
+                    <span class="list-item-text">Fraud & Breach of Contract</span>
+                  </li>
+  
+                  <li class="list-item">
+                    <i class="list-item-icon fas fa-hard-hat"></i>
+                    <span class="list-item-text">Construction Defect</span>
+                  </li>
+  
+                  <li class="list-item">
+                    <i class="list-item-icon fas fa-city"></i>
+                    <span class="list-item-text">Condominium Dispute</span>
+                  </li>
+
+                  
+  
+                </ul>
+
+              </div>
+
+             
+              
+
+            <div class="sidebar-bottom">
+              <i class="main-icon fas fa-hand-point-right">
+              <span class="serviceName">LANDLORD-TENANT ISSUES</span> 
+              </i>
+
+
+              <ul class="list">
+                <li class="list-item"  title="Premises Liability">
+                  <i class="list-item-icon fas fa-people-carry"></i>
+                  <span class="list-item-text">Evictions And Habitability</span>
+                </li>
+
+               
+                
+
+                
+
+              </ul>
+
+            </div>
+
+
+            <div class="sidebar-others">
+              <!-- <i class="main-icon fas fa-building"> </i> -->
+              <span class="serviceName"></span> 
+             
+
+              <ul class="list">
+                <li class="list-item"  title="">
+                  <i class="list-item-icon fas fa-blender-phone"></i>
+                  <span class="list-item-text">Contact Bravo Law Offices</span>
+                </li>
+
+                <li class="list-item">
+                  <i class="list-item-icon far fa-user-circle"></i>
+                  <span class="list-item-text">About</span>
+                </li>
+
+              </ul>
+
+            </div>
+
+
+            <!-- <div class="sidebar-colors">
+              <div class="color-box dark"></div>
+              <div class="color-box night"></div>
+              <div class="color-box light"></div>
+            </div> -->
+</div>
+            <div class="informationDisplay">
+
+             <div class="displayInfor">
+
+              <h1 class="page-title">San Francisco Personal Injury Lawyer</h1>
+								<article class="content">
+								
+
+
+
+                        
+                    <p>At Bravo Law Offices, we give honest, straightforward legal advice to people who have suffered serious injuries. Our lawyers have been practicing in personal injury for over 30 years. We know if you have a legal claim and will fight to maximize your compensation.</p>
+<p>Located in San Francisco, California, our firm fights for the rights of injury victims throughout the Bay Area. We will fight for you.</p>
+<h2>Maximize Your Compensation After An Accident</h2>
+<p>At Bravo Law Offices, we pursue compensation that not only covers today's pain and suffering, but the pain, suffering, lost wages and medical expenses your injury may cause later in life.</p>
+<p>Prompt medical attention after any accident is critical to the success of every personal injury case. If you cannot medical examination or care, we will work with you to help you get the examinations or care you need to prove your claim. But we want to see you get better as well. Your care and recovery is important to us.</p>
+<p class="callOut">Make sure you seek medical attention after an accident. Getting a qualified medical exam and good medical care is the only way to know how your injuries will impact your life.</p>
+<p>Our lawyers are experienced litigators. We are committed to helping clients get fair compensation for their injuries — we can help you. Over the years, we have represented clients suffering everything from minor to 
+    <a href="Serious-Accidents.html">severe physical injuries</a>. If you were hurt in a 
+    <a href="Premises-Liability.html">slip-and-fall accident</a>, or 
+    <a href="Medical-Malpractice.html">negligence of a doctor or hospital</a>, or in a 
+    <a href="Work-Related-Injuries.html">job-related accident</a> or in any other accident, call us.
+</p>
+<h2>Contact Joe Bravo</h2>
+<p>At Bravo Law Offices, our lawyers will come to you to so we can see the impact your injury is having on your life and your family. Attorney Joe Bravo also gives client his personal cell number — if you have questions, call. To schedule a consultation, call 415-512-6700 or 
+    <a href="../Contact.html">complete our online contact form</a>.
+</p>			
+
+             </div>
+              
+            </div>
+            
+
+</div>
+
+
+
+
+
+
+
+
+
+
+.sideBar ul li {
+    display: block;
+    position: relative;
+    float: left;
+    /* background: #1bc2a2; */
+  }
+.sideBar li ul {
+    display: none;
+  }
+  .sideBar ul li a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #fff;
+  }
+  .sideBar ul li a:hover {
+    background: #2c3e50;
+    border-radius: 10px;
+  }
+  /* Display the dropdown */
+  .sideBar li:hover > ul {
+    display: block; 
+    position: absolute;
+  }
+  /* Remove float from dropdown lists */
+  .sideBar li:hover li {
+      float: none;
+  }
+  .sideBar li:hover a {
+    background: #1bc2a2;
+  }
+  .sideBar li:hover li a:hover {
+    background: #2c3e50;
+  }
+  .sideBar li ul li {
+    border-top: 0;
+  }
+  /* Displays second level dropdowns to the right of the first level dropdown */
+  .sideBar ul ul ul {
+    left: 100%;
+    top: 0; 
+  }
+  
+  i {
+      padding-right: 10px;
+  }
+  /* Simple clearfix */
+  
+  .sideBar ul:before,
+  .sideBar ul:after {
+      content: " "; /* 1 */
+      display: table; /* 2 */
+  }
+  
+  .sideBar ul:after {
+      clear: both;
+  }
+
+  /* side Bar Modification */
+
+

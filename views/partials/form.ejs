@@ -1,0 +1,34 @@
+<ul>
+            
+
+    <form action="/"  class="registerForm"  id="registerForm" method="post" >
+         
+      <span class="contactTitle"> ASK US A QUESTION </span>
+      
+      <hr>
+
+          
+      <!-- <label > Full name : </label> -->
+        <!-- <input type="text" class="emailInput" placeholder="enter your email..." /> -->
+        <input  type="text" class="emailInput" id="name" name="name" placeholder="FULL NAME" tabindex="1" required>
+          <br>
+        <!-- <label > EMAIL: </label> -->
+        <!-- <input type="text" class="emailInput" placeholder="enter your email..." /> -->
+        <input  type="email" class="emailInput" id="name" name="email" placeholder="EMAIL" tabindex="2" required>
+        <br>
+        <!-- <label > TEL/CELL: </label> -->
+        <input  type="text" pattern="(?:\(\d{3}\)|\d{3})[- ]?\d{3}[- ]?\d{4}" maxlength="14" class="phoneInput" id="name" name="cellnumber" placeholder="(xxx) xxx-xxxx" tabindex="2" required>
+        <!-- <input type="text" class="phoneInput" placeholder="enter your number..." /> -->
+        <!-- <br>
+        <label><input type="checkbox" /> Label text</label> -->
+       
+
+         
+        <!-- <label> MESSAGE: </label> -->
+        <br>
+        <textarea  class="textAreaInput"  name="message" id="textArea" style="margin-top: 10px;" rows="6" cols="50"  maxlength=250 placeholder="Brief description of your legal issue" required="required"></textarea>
+         <br>
+        <button type="submit"    class="sendButton">  Get Help Now </button>
+         <!-- onclick="submitContact(event)" -->
+    </form>
+  </ul>
